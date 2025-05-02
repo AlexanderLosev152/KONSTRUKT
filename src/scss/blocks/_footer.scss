@@ -1,0 +1,50 @@
+.footer {
+  background: #141a20;
+  padding-block: clamp(1rem, 3vw, 2.625rem);
+  color: #fff;
+  &__wrapper {
+    gap: 1rem;
+  }
+  &__company {
+    max-width: 250px;
+    span {
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+    a {
+      margin-bottom: 1rem;
+      display: block;
+    }
+  }
+  &__link {
+    display: flex;
+    gap: 2rem;
+    h5 {
+      margin-bottom: 10px;
+    }
+    div:nth-child(1) {
+      max-width: 262px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+      }
+    }
+    div:nth-child(2) {
+      max-width: 140px;
+    }
+    a {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 227%;
+      letter-spacing: 0.08em;
+      color: #fff;
+      text-wrap: nowrap;
+    }
+  }
+  &__social {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}

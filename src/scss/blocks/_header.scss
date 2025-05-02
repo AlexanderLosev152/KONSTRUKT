@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: calc(100vh - 65px);
+    color: #fff;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin-top: 41px;
+    display: inline-block;
+    text-align: center;
+  }
+  &__text {
+    margin-top: auto;
+  }
+  &__subtitle {
+    margin-top: -1rem;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+  &__scroll-btn {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    margin-top: auto;
+    margin-bottom: 71px;
+  }
+}

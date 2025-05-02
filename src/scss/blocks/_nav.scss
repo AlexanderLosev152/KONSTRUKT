@@ -1,0 +1,42 @@
+@import '../utils/mixins';
+@import '../utils/media';
+
+.nav {
+  margin-block: 24px;
+  position: relative;
+  ul {
+    gap: 48px;
+
+    @include media($tablet) {
+      display: none;
+      position: absolute;
+      left: -100%;
+    }
+    a {
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.09em;
+      color: #48555b;
+      transition: color 0.3s;
+      @include hover {
+        color: #00a4e5;
+      }
+    }
+  }
+}
+
+.nav.open {
+  position: relative;
+  z-index: 10;
+  ul {
+    left: 0;
+    top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    width: 100%;
+  }
+}

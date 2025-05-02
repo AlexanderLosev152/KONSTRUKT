@@ -1,0 +1,56 @@
+@import 'normalize.css';
+
+@import './scss/globals/reset';
+@import './scss/globals/vars';
+@import './scss/globals/container';
+@import './scss/globals/fonts';
+@import './scss/globals/typography';
+
+@import './scss/blocks/burger';
+@import './scss/blocks/btn';
+@import './scss/blocks/mobile-menu';
+
+@import './scss/blocks/header';
+@import './scss/blocks/nav';
+@import './scss/blocks/story';
+@import './scss/blocks/capabilites';
+@import './scss/blocks/amazing';
+@import './scss/blocks/footer';
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  // font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #48555b;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
