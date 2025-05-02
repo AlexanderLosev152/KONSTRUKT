@@ -2,7 +2,7 @@
 
 .burger {
   display: none;
-  @include media($mobile) {
+  @include media($tablet) {
     display: grid;
     gap: 0.3rem;
     position: relative;
